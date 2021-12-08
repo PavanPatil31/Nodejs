@@ -1,0 +1,40 @@
+12/7/2021 4:08:49 PM: --- STARTING SEB SERVICE ---
+12/7/2021 4:08:49 PM: Initializing service host...
+12/7/2021 4:08:51 PM: System.ServiceModel.AddressAlreadyInUseException: Cannot listen on pipe name 'net.pipe://localhost/SebWindowsServiceWCF/service' because another pipe endpoint is already listening on that name. ---> System.IO.PipeException: Cannot listen on pipe name 'net.pipe://localhost/SebWindowsServiceWCF/service' because another pipe endpoint is already listening on that name.
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at SebWindowsServiceWCF.SebWindowsServiceWCF.OnStart(String[] args) Cannot listen on pipe name 'net.pipe://localhost/SebWindowsServiceWCF/service' because another pipe endpoint is already listening on that name.: Unable to start service host!
+   at System.ServiceModel.Channels.PipeConnectionListener.Listen()
+   at System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   at System.ServiceModel.Channels.ExclusiveNamedPipeTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.NamedPipeChannelListener`2.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at SebWindowsServiceWCF.SebWindowsServiceWCF.OnStart(String[] args)
+12/7/2021 4:09:16 PM: Finalizing SEB service...
+12/7/2021 4:09:16 PM: System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.ServiceHost, cannot be used for communication because it is in the Faulted state.
+   at System.ServiceModel.Channels.CommunicationObject.Close(TimeSpan timeout)
+   at SebWindowsServiceWCF.SebWindowsServiceWCF.OnStop() The communication object, System.ServiceModel.ServiceHost, cannot be used for communication because it is in the Faulted state.: Unable to stop service host!
+   at System.ServiceModel.Channels.CommunicationObject.Close(TimeSpan timeout)
+   at SebWindowsServiceWCF.SebWindowsServiceWCF.OnStop()
+12/7/2021 4:09:16 PM: --- STOPPED SEB SERVICE ---
+
